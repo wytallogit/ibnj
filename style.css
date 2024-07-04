@@ -1,5 +1,7 @@
 :root {
-    --azul: #3B47D1;
+    --azul: #0455BF;
+    --azul-sec: #0468BF;
+    --azul-ter: #B4CED9;
 }
 
 * {
@@ -52,12 +54,21 @@ a:hover {
     }
 }
 
+section {
+    width: 86%;
+    margin: 30px auto;
+    text-align: justify;
+}
 
-/*conteudo da pagina*/
+
+.green {
+    background-color: var(--azul-ter);
+}
 
 
-.culto-item1 {
-    width: 300px;
-    height: 300px;
+
+
+footer {
     background-color: gray;
+    color: white;
 }
