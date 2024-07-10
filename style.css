@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
 
 :root {
     --azul: #1A86B5;
@@ -29,14 +32,18 @@ header > img {
     padding: 10px;
 }
 
-a, a:visited {
+nav > a {
+    font-weight: 600;
+}
+
+nav > a, a:visited {
     color: white;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
 }
 
-a:hover {
+nav > a:hover {
     background-color: white;
     color: var(--azul-escuro);
 }
@@ -46,16 +53,58 @@ a:hover {
 
 /*conteudo da pagina*/
 
-section {
+section { /*config gerias das partes*/
     width: 80%;
     margin: auto;
+    padding: 50px 0;
+}
+
+section > h2 { /*config gerais de h2*/
+    text-align: center;
+}
+
+section > p { /*config gerais de p*/
+    text-align: justify;
+}
+
+button {
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+/*conteudo sobre a historia da igreja*/
+#historia-conteudo {
+    display: flex;
+}
+
+figure > img {
+    border-radius: 4px;
+}
+
+#historia > figure {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+#historia-conteudo {
+    flex: auto;
+}
+
+/* isso serve para deixa o background azul e como o main ta em 80%, esse padding de 10% cada lado deixa o backgroundo 100% da tela*/
+#historia, #colabore, #localizacao {
+    background-color: var(--azul);
+    padding: 0 10%;
 }
 
 
-/* isso serve para deixa o background azul e como o main ta em 80%, esse padding de 10% cada lado deixa o backgroundo 100% da tela*/
-#historia, #colabore {
-    background-color: var(--azul);
-    padding: 0 10%;
+#versiculo {
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 1.2em;
+    text-align: center;
 }
 
 
@@ -75,14 +124,54 @@ section {
     text-align: center;
     flex: 30%;
     background-color: #1A86B5;
+    border-radius: 5px;
+}
+
+/*parte de doaçoes*/
+
+#colabore-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colabore-item {
+    flex: auto;
+    text-align: justify;
+    margin: 30px;
 }
 
 
 
+/*seção de locazização*/
+
+.localizacao-item {
+    background-color: #3DA0CA;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.localizacao-item > a {
+    float: right;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+}
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 750px) {
     body {
         font-size: 12px;
+    }
+
+    #versiculo {
+        font-size: 2.5em;
+    }
+
+    #colabore-display {
+        flex-wrap: wrap-reverse;
     }
 }
