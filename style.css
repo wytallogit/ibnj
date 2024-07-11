@@ -138,22 +138,40 @@ figure > img {
 .colabore-item {
     flex: auto;
     text-align: justify;
-    margin: 30px;
 }
 
 
 
 /*seção de locazização*/
 
-.localizacao-item {
-    background-color: #3DA0CA;
-    border-radius: 5px;
-    padding: 5px;
+
+
+/*seção de contatos*/
+
+#contatos-caixa {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
 }
 
-.localizacao-item > a {
-    float: right;
+#contatos-caixa h2 {
+    display: inline;
+    width: 100%;
+
 }
+
+.contatos-itens {
+    width: 30%;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
 
 footer {
     background-color: grey;
